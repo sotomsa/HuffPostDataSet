@@ -47,6 +47,5 @@ __pycache__/
 *.code-workspace
 poppler-0.68.0
 
-#Jupyter notebook
-*.ipynb
+#Jupyter notebook checkpoints
 *.ipynb_checkpoint
