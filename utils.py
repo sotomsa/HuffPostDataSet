@@ -11,6 +11,8 @@ import nltk
 from nltk.tokenize import word_tokenize
 from nltk.stem import SnowballStemmer
 
+from sklearn.metrics import classification_report
+
 def tokenization_stopwords_stemming(df, col_name='headline', tok_col_name='tok'):
     """
     Function that, given a pandas dataframe, a text column name and token column name,
