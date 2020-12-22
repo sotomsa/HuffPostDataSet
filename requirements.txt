@@ -8,3 +8,7 @@ azure_identity==1.5.0
 azure_keyvault_secrets==4.2.0
 altair==4.1.0
 vega-datasets==0.9.0
+mlxtend==0.18.0
+tensorflow==2.4.0
+keras==2.4.3
+scikit_optimize==0.8.1
