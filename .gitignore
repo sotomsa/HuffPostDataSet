@@ -49,3 +49,5 @@ poppler-0.68.0
 
 #Jupyter notebook checkpoints
 *.ipynb_checkpoint
+*.ipynb_checkpoints
+.Rproj.user
