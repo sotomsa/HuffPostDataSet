@@ -197,3 +197,9 @@ def consolidate_results(path='./Data'):
                                     'weighted_avg_f1-score':class_report['weighted avg']['f1-score']
                                    },ignore_index=True)
     return(df_final)
+
+class GridSearchSimulation(object):
+    # Class to include parameter best_score_
+    # so that it does not break the code.
+    def __init__(self,train_score):
+        self.best_score_ = train_score
