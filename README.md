@@ -20,7 +20,7 @@ Here is the list of files and their descriptions:
 
 ### Machine Learning Models
 
-Machine Learning models for classifying a "headline" or "headline + short description" as one of the 41 categories (or 7 categories simplified version). Here is the jupyter notebook [News_Headlines_to_Category_Model.ipynb](https://github.com/sotomsa/HuffPostDataSet/blob/main/News_Headlines_to_Category_Model.ipynb) and here is the html file (News_Headlines_to_Category_Model.html)[https://github.com/sotomsa/HuffPostDataSet/blob/main/News_Headlines_to_Category_Model.html]. Some of the highlights included in this jupyter notebook include:
+Machine Learning models for classifying a "headline" or "headline + short description" as one of the 41 categories (or 7 categories simplified version). Here is the jupyter notebook [News_Headlines_to_Category_Model.ipynb](https://github.com/sotomsa/HuffPostDataSet/blob/main/News_Headlines_to_Category_Model.ipynb) and here is the html file [News_Headlines_to_Category_Model.html](https://github.com/sotomsa/HuffPostDataSet/blob/main/News_Headlines_to_Category_Model.html). Some of the highlights included in this jupyter notebook include:
 
 - Models such as Naive Bayes (NB), Logistic Regresion (LR) with/without PCA , Random Forests (RF) and Neural Networks (NN) using SKLearn and Keras.
 - Grid Search (sklearn) and Bayesian Optimization (skopt) for hyperparameter search.
