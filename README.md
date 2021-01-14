@@ -1,12 +1,14 @@
 # HuffPost Dataset
 
-This is a Data Science project for Exploratory Data Analysis and Machine Learning modeling with a the Huffpost dataset using Python. 
+This is a Data Science project for Exploratory Data Analysis and Machine Learning modeling using the Huffpost dataset and Python. 
 
-The data can be found in the following link ([link to Dataset](https://www.kaggle.com/rmisra/news-category-dataset)). The dataset contains headlines, short descriptions, authors and category of around 200k articles from the huffPost from 2012 to 2018.
+The dataset can be downloded from the following link ([link to Dataset](https://www.kaggle.com/rmisra/news-category-dataset)). This dataset has around 200k huffPost articles from 2012 to 2018. It contains headlines, short descriptions, authors and category for each article.
+
+![Frequency by Category](./imgs/FreqByCategory.PNG)
 
 If you want to reproduce the code in this repository, please download and extract json in the following path "./Data/News_Category_Dataset_v2.json" before running the notebooks (NOTE: Given the size of the datasets, some models take long times to complete).
 
-The programming language used is Python with [Altair](https://altair-viz.github.io/) visualization tool on Jupyter Notebooks. Since almost all Altair plots are interactive and Github does not render Altair plots correctly, I recommend that the html file is downloaded and rendered in a browsers, such as Chrome or Firefox, so that you are able to interact with the plots (Github only renders plain Matplotlib plots). For this reason, each jupyter file has a html file with the same name. 
+The programming language used is Python with [Altair](https://altair-viz.github.io/) visualization library on Jupyter Notebooks. Since almost all Altair plots are interactive and Github does not render Altair plots correctly, I recommend that the html file is downloaded and rendered in a browsers, such as Chrome or Firefox, so that you are able to interact with the plots (Github only renders plain Matplotlib plots). For this reason, each jupyter file has a html file with the same name. 
 
 Here is one of the examples of Altair plots which was made for exploring the Neural Network accuracy for high-dimensional hyperparameter search (You can find the interactive version of the following [here](https://github.com/sotomsa/HuffPostDataSet/blob/main/News_Headlines_to_Category_Model.html)).
 
