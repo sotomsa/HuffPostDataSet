@@ -86,16 +86,18 @@ def plot_freq_x_context(df_tok_clean, class_col_name='category', tok_col_name='t
     grouped_toks = grouped_toks.rename(columns = {'id_count':'count'}).reset_index()
     
     # Return altair facet graph
-    return(alt.Chart(grouped_toks
+    plot = (alt.Chart(grouped_toks
                   .groupby(class_col_name)
                   .head(n)
     ).mark_bar().encode(
-        x='count:Q',
-        y=alt.Y(tok_col_name + ':N', sort='-x'),
+        x=alt.X('count:Q', title='Count'),
+        y=alt.Y(tok_col_name + ':N', sort='-x', title=tok_col_name.capitalize()),
+
         tooltip=[tok_col_name,'count']
     ).properties(
         width=120,
-        height=50
+        height=50,
+        title='[Interactive] Word Frequency by Category'
     ).facet(
         facet= class_col_name + ':N',
         columns=4
@@ -103,6 +105,9 @@ def plot_freq_x_context(df_tok_clean, class_col_name='category', tok_col_name='t
       x='independent',
       y='independent'
     ))
+    return plot.properties(
+        title=f'[Interactive] {tok_col_name.capitalize()} Frequency by {class_col_name.capitalize()}'
+    )
 
 def GridSearchResultToDF(search):
     """
@@ -127,7 +132,7 @@ def PlotComparison(result_values, descrete, continuous, jitter=100):
         ymin="datum.mean-2*datum.std",
         ymax="datum.mean+2*datum.std",
     ).properties(
-        title = 'Accuracy by Params'
+        title = '[Interactive] Accuracy by Params'
     )
     
     points = base.mark_point(
