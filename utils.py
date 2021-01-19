@@ -68,7 +68,8 @@ def ETL(df, col_name= 'headline', class_col_name='category', tok_col_name='tok')
     
     return df_tok_clean,df_liquid_text
 
-def plot_freq_x_context(df_tok_clean, class_col_name='category', tok_col_name='tok', n=5):
+def plot_freq_x_context(df_tok_clean, class_col_name='category', tok_col_name='tok', n=5, n_cols=4,
+                        width=120, height=50 ):
     """
     Function that, given a pandas dataframe, a text column name and token column name,
     plots the n largest frequency tokens by class_col_name.
@@ -95,12 +96,12 @@ def plot_freq_x_context(df_tok_clean, class_col_name='category', tok_col_name='t
 
         tooltip=[tok_col_name,'count']
     ).properties(
-        width=120,
-        height=50,
+        width=width,
+        height=height,
         title='[Interactive] Word Frequency by Category'
     ).facet(
         facet= class_col_name + ':N',
-        columns=4
+        columns=n_cols
     ).resolve_scale(
       x='independent',
       y='independent'

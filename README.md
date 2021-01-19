@@ -20,7 +20,7 @@ What is interesting about this interactive plot is that it allows you to select 
 
 Here is the list of files and their descriptions:
 
-### Machine Learning Models
+### Supervised Machine Learning Models
 
 Machine Learning models for classifying "headlines" or "headline + short description" as one of the 41 categories in the dataset (or 7 categories simplified version). Here is the link to the jupyter notebook [News_Headlines_to_Category_Model.ipynb](https://github.com/sotomsa/HuffPostDataSet/blob/main/News_Headlines_to_Category_Model.ipynb) and the link to its html file [News_Headlines_to_Category_Model.html](https://github.com/sotomsa/HuffPostDataSet/blob/main/News_Headlines_to_Category_Model.html). Some of the highlights included in this jupyter notebook include:
 
@@ -47,3 +47,20 @@ Here are some results for the models tested:
 |  7 | headlines_NN                          |             0.46 |            0.47 |
 | 10 | short_description_NB                  |             0.37 |            0.39 |
 |  8 | headlines_PCA_LR                      |             0.37 |            0.38 |
+
+### Unsupervised Machine Learning Model
+
+In this second notebook called [Authors.ipynb](https://github.com/sotomsa/HuffPostDataSet/blob/main/Authors.ipynb) deals with a clustering algorithm for finding patterns in the categories of articles produced by different authors. In particular, it tries to find different group of authors with similar writting patterns. The html version can be found in the link [Authors.html](https://github.com/sotomsa/HuffPostDataSet/blob/main/News_Headlines_to_Category_Model.html).
+
+In the following image, you can see that the algorithm found 4 clusters:
+
+- Cluster 0: cluster with authors writing mainly about politics.
+- Cluster 1: cluster with authors writing about wellness, healthy living and parenting.
+- Cluster 2: cluster with authors writing almost only about travelling. This is the smalles cluster.
+- Cluster 3: This is definetely the largest cluster of all with authors that seem not to fall in any previous clusters.
+
+![Categories by Cluster](./imgs/categories_freq_by_cluster.PNG)
+
+In the following image you can see the frequency of authors by cluster:
+
+![Frequency by Cluster](./imgs/freq_by_cluster.PNG)
