@@ -18,6 +18,7 @@ project.lock.json
 /App_Data
 /secrets
 /data
+/dp-cache
 .secrets
 appsettings.json
 local.settings*.json
