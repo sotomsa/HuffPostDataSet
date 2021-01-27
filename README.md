@@ -34,19 +34,20 @@ Here are some results for the models tested:
 ![Accuracy of the Models](./imgs/results.PNG)
 
 
-|    | model_name                            |   train_accuracy |   test_accuracy |
-|---:|:--------------------------------------|-----------------:|----------------:|
-|  0 | headlines_description_7_categories_LR |             0.69 |            0.74 |
-|  1 | headlines_description_7_categories_NB |             0.65 |            0.68 |
-|  3 | headlines_elasticnet_LR               |             0.59 |            0.59 |
-|  4 | headlines_LSTM_NN                     |             0.65 |            0.55 |
-|  2 | headlines_description_NB              |             0.51 |            0.53 |
-|  9 | headlines_RF                          |             0.51 |            0.52 |
-|  6 | headlines_ngrams_NB                   |             0.48 |            0.51 |
-|  5 | headlines_NB                          |             0.48 |            0.5  |
-|  7 | headlines_NN                          |             0.46 |            0.47 |
-| 10 | short_description_NB                  |             0.37 |            0.39 |
-|  8 | headlines_PCA_LR                      |             0.37 |            0.38 |
+| model_name                            |   train_accuracy |   test_accuracy |
+|:--------------------------------------|-----------------:|----------------:|
+| headlines_description_7_categories_LR |             0.69 |            0.74 |
+| headlines_description_7_categories_NB |             0.65 |            0.68 |
+| headlines_pytorch_pretrained_NN       |             0.62 |            0.63 |
+| headlines_elasticnet_LR               |             0.59 |            0.59 |
+| headlines_LSTM_NN                     |             0.65 |            0.55 |
+| headlines_description_NB              |             0.51 |            0.53 |
+| headlines_RF                          |             0.51 |            0.52 |
+| headlines_ngrams_NB                   |             0.48 |            0.51 |
+| headlines_NB                          |             0.48 |            0.5  |
+| headlines_NN                          |             0.46 |            0.47 |
+| short_description_NB                  |             0.37 |            0.39 |
+| headlines_PCA_LR                      |             0.37 |            0.38 |
 
 ### Unsupervised Machine Learning Model
 
